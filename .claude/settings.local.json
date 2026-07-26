@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__laravel-boost__search-docs",
+      "mcp__laravel-boost__get-absolute-url",
+      "Bash(npm install *)",
+      "Bash(php artisan *)",
+      "Bash(vendor/bin/pint --dirty --format agent)",
+      "Bash(npm run *)",
+      "mcp__laravel-boost__browser-logs",
+      "Skill(laravel-best-practices)",
+      "mcp__laravel-boost__last-error",
+      "Bash(curl -s \"https://lescoporcostarica.com/wp-json/wp/v2/posts?per_page=1&_fields=id,total_pages\" -I --max-time 10)",
+      "Bash(curl -s \"https://lescoporcostarica.com/wp-json/wp/v2/posts?per_page=10&_fields=id,slug,title,date,featured_media&_embed&page=1\" --max-time 15)",
+      "Bash(php -r ' *)",
+      "Bash(curl -s \"https://lescoporcostarica.com/wp-json/wp/v2/posts?per_page=10&page=1&_embed\" --max-time 15)",
+      "Bash(curl -v \"https://lescoporcostarica.com/wp-json/wp/v2/posts?per_page=10&_embed\" --max-time 20)",
+      "Bash(curl -s \"https://lescoporcostarica.com/wp-json/wp/v2/posts?per_page=10&_embed\" --max-time 20 -o C:\\\\Users\\\\User\\\\Herd\\\\lesco-cr\\\\wp_posts.json)",
+      "Bash(php *)",
+      "mcp__laravel-boost__database-query",
+      "Bash(./vendor/bin/phpstan analyse *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "laravel-boost"
+  ]
+}
