@@ -56,7 +56,7 @@
 
             {{-- Intro --}}
             <div class="mb-14 max-w-2xl">
-                <h2 class="text-2xl font-bold text-gray-900 mb-5">Conocé al equipo</h2>
+                <h2 class="font-bold text-gray-900 mb-5 text-4xl">Conocé al equipo</h2>
                 <div class="space-y-4 text-gray-600 leading-relaxed">
                     <p>
                         Detrás de LESCO por Costa Rica, estamos un grupo de personas que tenemos como filosofía de vida la inclusión, y que nos une el amor por lo que nos gusta y apasiona.

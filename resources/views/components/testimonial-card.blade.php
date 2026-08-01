@@ -3,7 +3,7 @@
 <div {{ $attributes->merge(['class' => 'bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center max-w-2xl mx-auto']) }}>
     @if($testimonial->photo)
         <img
-            src="{{ asset('storage/' . $testimonial->photo) }}"
+            src="{{ asset('img/' . $testimonial->photo) }}"
             alt="Foto de {{ $testimonial->name }}"
             class="w-16 h-16 rounded-full object-cover mx-auto mb-4"
         >

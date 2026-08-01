@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
             TestimonialSeeder::class,
             TeamMemberSeeder::class,
             PostSeeder::class,
+            AllianceSeeder::class,
         ]);
     }
 }
