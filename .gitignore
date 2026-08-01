@@ -1,6 +1,7 @@
 /.phpunit.cache
 /node_modules
 /public/build
+/public/img
 /public/fonts-manifest.dev.json
 /public/hot
 /public/storage
@@ -22,3 +23,4 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+.claude/settings.local.json
