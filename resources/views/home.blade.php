@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'LESCO por Costa Rica')
+@section('title', 'Aprender Lesco - Lesco por Costa Rica')
 
 @section('meta')
     <x-seo-meta
-        title="LESCO por Costa Rica"
-        description="Aprende la Lengua de Señas Costarricense. Talleres virtuales y presenciales para personas, empresas e instituciones."
+        title="Aprender Lesco - Lesco por Costa Rica"
+        description="Lesco por Costa Rica - Aprender Lesco"
+        :image="asset('img/quienes_somos.jpg')"
+        imageType="image/jpeg"
     />
 @endsection
 
@@ -41,14 +43,12 @@
     <section class="py-20 px-4" aria-labelledby="about-heading">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 id="about-heading" class="text-3xl font-bold text-gray-900 mb-4">¿Quiénes somos?</h2>
-                <div class="space-y-4 text-gray-600 leading-relaxed">
+                <h2 id="about-heading" class="text-3xl font-bold text-gray-900 mb-4 text-4xl">¿Quiénes somos?</h2>
+                <div class="space-y-4 text-gray-600 leading-relaxed text-3xl">
                     <p>
-                        LESCO por Costa Rica es una organización dedicada a la enseñanza y difusión de la Lengua de Señas Costarricense, con el objetivo de construir una sociedad más inclusiva y accesible para la comunidad sorda.
+                        Somos una agrupación interdisciplinaria compuesta por personas sordas y oyentes que buscamos visibilizar la importancia de la cultura sorda y la LESCO en nuestro país.
                     </p>
-                    <p>
-                        Ofrecemos talleres virtuales y presenciales para personas, empresas e instituciones que desean aprender a comunicarse en LESCO y acercarse a la cultura sorda costarricense.
-                    </p>
+
                 </div>
                 <a
                     href="{{ route('team.index') }}"
@@ -155,12 +155,34 @@
     @endif
 
     {{-- Alianzas --}}
+    @if($alliances->isNotEmpty())
     <section class="py-16 px-4" aria-labelledby="alliances-heading">
         <div class="max-w-5xl mx-auto text-center">
-            <h2 id="alliances-heading" class="text-2xl font-bold text-gray-900 mb-4">Nuestras alianzas</h2>
-            <p class="text-gray-500 text-sm">Próximamente se mostrarán los logos de nuestras organizaciones aliadas.</p>
+            <h2 id="alliances-heading" class="text-2xl font-bold text-gray-900 mb-10">Nuestras alianzas</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                @foreach($alliances as $alliance)
+                <div class="flex items-center justify-center">
+                    @if($alliance->url)
+                    <a href="{{ $alliance->url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $alliance->name }}">
+                        <img
+                            src="{{ asset('img/' . $alliance->logo) }}"
+                            alt="{{ $alliance->name }}"
+                            class="h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                        >
+                    </a>
+                    @else
+                    <img
+                        src="{{ asset('img/' . $alliance->logo) }}"
+                        alt="{{ $alliance->name }}"
+                        class="h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                    >
+                    @endif
+                </div>
+                @endforeach
+            </div>
         </div>
     </section>
+    @endif
 
     {{-- CTA Servicios --}}
     <section class="bg-blue-50 py-16 px-4" aria-labelledby="cta-heading">
