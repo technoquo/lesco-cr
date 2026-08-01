@@ -61,7 +61,9 @@
                 </a>
             </div>
             <div class="bg-blue-50 rounded-2xl aspect-video flex items-center justify-center text-blue-300 border-2 border-dashed border-blue-200" aria-hidden="true">
-                <span class="text-sm text-blue-400">Imagen próximamente</span>
+                <span class="text-sm text-blue-400">
+                    <img src="{{ asset('img/quienes_somos.jpg') }}" alt="Nuestro equipo de LESCO por Costa Rica" class="rounded-2xl">
+                </span>
             </div>
         </div>
     </section>

@@ -9,15 +9,20 @@ class TeamMemberSeeder extends Seeder
 {
     public function run(): void
     {
-        // Contenido real pendiente de confirmar con el usuario (ver design.md §9).
-        // Esta estructura queda lista para poblar una vez confirmados los datos.
         $members = [
             [
-                'name' => 'Por confirmar',
-                'role' => 'Por confirmar',
+                'name' => 'Jeremy Chacón Bermúdez',
+                'role' => 'Director de LESCO X CR',
                 'bio' => null,
-                'photo' => null,
+                'photo' => 'imported/jeremy.jpeg',
                 'order' => 1,
+            ],
+            [
+                'name' => 'Valerie Calderón Guillén',
+                'role' => 'Directora de LESCO X CR',
+                'bio' => null,
+                'photo' => 'imported/valeria.jpeg',
+                'order' => 2,
             ],
         ];
 
