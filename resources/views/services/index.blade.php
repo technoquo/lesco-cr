@@ -20,6 +20,45 @@
         </div>
     </div>
 
+    {{-- Galería visual --}}
+    <section class="py-10 px-4" aria-label="Nuestras actividades en LESCO">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-2 md:h-80">
+
+                <div class="relative rounded-2xl overflow-hidden aspect-video md:col-span-2 md:row-span-2 md:aspect-auto">
+                    <img
+                        src="{{ asset('storage/imported/ensenando.jpg') }}"
+                        alt="Instructora enseñando Lengua de Señas Costarricense"
+                        class="absolute inset-0 w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent"></div>
+                    <p class="absolute bottom-5 left-5 text-white font-semibold text-base">Instructoras certificadas en LESCO</p>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden aspect-video md:aspect-auto">
+                    <img
+                        src="{{ asset('storage/imported/laptop.jpg') }}"
+                        alt="Talleres virtuales de LESCO"
+                        class="absolute inset-0 w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent"></div>
+                    <p class="absolute bottom-3 left-3 text-white text-sm font-semibold">Modalidad virtual</p>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden aspect-video md:aspect-auto">
+                    <img
+                        src="{{ asset('storage/imported/lesco.jpg') }}"
+                        alt="Comunidad y cultura LESCO"
+                        class="absolute inset-0 w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent"></div>
+                    <p class="absolute bottom-3 left-3 text-white text-sm font-semibold">Cultura sorda costarricense</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="py-16 px-4" aria-labelledby="services-heading">
         <h2 id="services-heading" class="sr-only">Listado de servicios</h2>
         <div class="max-w-6xl mx-auto">
